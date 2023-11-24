@@ -1,0 +1,171 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "User Api",
+    "description": "User Api",
+    "version": "1.0.0"
+  },
+  "host": "lhttps://project2-axd0.onrender.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/music/": {
+      "get": {
+        "tags": [
+          "music"
+        ],
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "music"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "gender": {
+                  "example": "any"
+                },
+                "artist": {
+                  "example": "any"
+                },
+                "favalbum": {
+                  "example": "any"
+                },
+                "favsong": {
+                  "example": "any"
+                },
+                "date": {
+                  "example": "any"
+                },
+                "compositor": {
+                  "example": "any"
+                },
+                "compilations": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "music"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "gender": {
+                  "example": "any"
+                },
+                "artist": {
+                  "example": "any"
+                },
+                "favalbum": {
+                  "example": "any"
+                },
+                "favsong": {
+                  "example": "any"
+                },
+                "date": {
+                  "example": "any"
+                },
+                "compositor": {
+                  "example": "any"
+                },
+                "compilations": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "music"
+        ],
+        "description": "",
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/music/{id}": {
+      "get": {
+        "tags": [
+          "music"
+        ],
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
